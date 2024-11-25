@@ -1,0 +1,45 @@
+@import '../globals.css';
+
+.dash-tab{
+    @apply bg-mint-600 p-2 rounded-l-md text-midnight_green-100
+    flex items-center space-x-2 px-4 py-2 rounded-md hover:bg-midnight_green-400 
+    transition hover:text-white duration-300 hover:-translate-x-3
+    hover:translate-y-1 hover:rounded-l-lg border border-transparent
+    hover:border-mint-700;
+}
+
+.active {
+    @apply border border-mint-700 bg-midnight_green-400 text-white
+    -translate-x-3 translate-y-1
+}
+
+table {
+    @apply w-full h-full overflow-auto
+}
+
+tr {
+    @apply flex justify-between w-full mt-2
+}
+
+th {
+    @apply border-mint-500 text-center p-4 flex text-mint-500
+    justify-center items-center w-full border-r last:border-r-0
+}
+
+thead {
+    @apply rounded-lg border
+}
+
+tbody {
+    @apply space-y-2
+}
+
+td {
+    @apply bg-mint-600 w-full border border-mint-400
+    font-semibold last:border-r-0 p-3 whitespace-nowrap
+    overflow-hidden text-ellipsis
+}
+
+/* .dash-icon {
+    @apply animate-none
+} */
